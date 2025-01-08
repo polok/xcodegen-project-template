@@ -1,0 +1,52 @@
+targets:
+
+  ############
+  # Framework
+  ############
+
+  NetworkCore:
+    name: NetworkCore
+    type: framework
+    platform: iOS
+
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: "com.myapp.networkCore"
+      INFOPLIST_FILE: NetworkCore/Configs/Info.plist
+
+    scheme:
+      gatherCovergageData: true
+      testTargets:
+        - name: NetworkCore_Tests
+          parallelizable: true
+          randomExecutionOrder: true
+
+#    dependencies:
+   
+    sources:
+      - path: Sources
+        group: Modules/NetworkCore
+      - path: Configs/Info.plist
+        group: Modules/NetworkCore
+
+  ############
+  # Tests
+  ############
+
+  NetworkCore_Tests:
+    name: NetworkCore_Tests
+    type: bundle.unit-test
+    platform: iOS
+    settings:
+      INFOPLIST_FILE: NetworkCore/Configs/InfoTest.plist
+      PRODUCT_BUNDLE_IDENTIFIER: "com.myapp.networkCore.test"
+      CODE_SIGN_STYLE: Manual
+    sources:
+      - path: Tests
+        group: Modules/NetworkCore
+    dependencies:
+      - target: NetworkCore
+
+    scheme:
+      testTargets:
+        - NetworkCore_Tests
+      gatherCoverageData: true

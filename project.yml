@@ -1,0 +1,32 @@
+############
+## Project 
+############
+
+name: MyApplication
+
+############
+## Options
+############
+options:
+  minimumXcodeGenVersion: 2.10
+  generateEmptyDirectories: true
+  deploymentTarget: 
+    iOS: "16.0"
+
+
+#############
+## Settings
+#############
+
+# settings:
+    # IPHONEOS_DEPLOYMENT_TARGET: 16.0
+
+
+############
+## Imports
+
+include:
+  - packages.yml
+  - UICore/config.yml
+  - NetworkCore/config.yml
+  - App/iOS/config.yml

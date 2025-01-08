@@ -1,0 +1,6 @@
+
+//// Common Configuration
+#include "App/iOS/Configs/xcconfig/Staging.xcconfig"
+
+MYAPP_CODE_SIGN_IDENTITY = iPhone Distribution
+MYAPP_PROVISIONING_PROFILE_SPECIFIER = YourProfileIdOrNameHere
