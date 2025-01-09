@@ -19,7 +19,6 @@ targets:
 
     type: application
     platform: iOS
-    # deploymentTarget: 17.0
 
     sources:
       - path: Sources
@@ -59,22 +58,16 @@ targets:
       - target: UICore
       - target: NetworkCore
 
-      # # App Extensions
-      # - target: NotificationExtension
-      #   embed: true
-
       # SPM dependencies
-      # - package: Firebase
-      #   product: FirebaseAnalytics
-      # - package: Firebase
-      #   product: FirebaseCrashlytics
-      # - package: OneSignal
-      #   product: OneSignalFramework
+      - package: Firebase
+        product: FirebaseAnalytics
+      - package: Firebase
+        product: FirebaseCrashlytics
 
     scheme:
       configVariants:
         - Staging
         - Production
-      # commandLineArguments:
-        # -FIRAnalyticsDebugEnabled: false
-        # -FIRDebugDisabled: false
+      commandLineArguments:
+        -FIRAnalyticsDebugEnabled: false
+        -FIRDebugDisabled: false

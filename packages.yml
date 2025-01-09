@@ -1,0 +1,4 @@
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    minorVersion: 10.18.0
