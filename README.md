@@ -1,10 +1,14 @@
 # xcodegen-project-template
 
-Xcodegen project template showcase
+XcodeGen project template showcase which shows base configuration as a starting point for your project.
+
+XcodeGen is a command line tool written in Swift that generates your Xcode project using your folder structure and a project spec [link](https://github.com/yonaskolb/XcodeGen)
 
 # Prerequisites
 
 ## Homebrew
+
+Homebrew installs the stuff you need that Apple didn’t [link](https://brew.sh)
 
 Paste below in a macOS Terminal
 
@@ -13,6 +17,8 @@ Paste below in a macOS Terminal
 ```
 
 ## Mint
+
+A package manager that installs and runs Swift command line tool packages [link](https://github.com/yonaskolb/Mint)
 
 To install the mint and bootstrap the dependencies like xcodegen past this to your macOS Terminal
 
