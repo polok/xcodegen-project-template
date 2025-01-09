@@ -5,9 +5,9 @@ targets:
   ############
   
   UICore:
-    name: UICore
+    name: UICore_${platform}
     type: framework
-    platform: iOS
+    platform: [iOS, tvOS]
 
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: "com.myapp.uicore"

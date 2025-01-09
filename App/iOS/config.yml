@@ -55,8 +55,8 @@ targets:
 
     dependencies:
       # Internal Dependencies
-      - target: UICore
-      - target: NetworkCore
+      - target: UICore_iOS
+      - target: NetworkCore_iOS
 
       # SPM dependencies
       - package: Firebase

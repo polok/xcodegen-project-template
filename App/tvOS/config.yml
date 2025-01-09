@@ -55,7 +55,8 @@ targets:
 
     dependencies:
       # Internal Dependencies
-
+      - target: UICore_tvOS
+      - target: NetworkCore_tvOS
       # SPM dependencies
       - package: Firebase
         product: FirebaseAnalytics

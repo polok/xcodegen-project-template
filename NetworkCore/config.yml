@@ -5,9 +5,9 @@ targets:
   ############
 
   NetworkCore:
-    name: NetworkCore
+    name: NetworkCore_${platform}
     type: framework
-    platform: iOS
+    platform: [iOS, tvOS]
 
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: "com.myapp.networkCore"
@@ -16,7 +16,7 @@ targets:
     scheme:
       gatherCovergageData: true
       testTargets:
-        - name: NetworkCore_Tests
+        - name: NetworkCore_Tests_${platform}
           parallelizable: true
           randomExecutionOrder: true
 
@@ -33,9 +33,9 @@ targets:
   ############
 
   NetworkCore_Tests:
-    name: NetworkCore_Tests
+    name: NetworkCore_Tests_${platform}
     type: bundle.unit-test
-    platform: iOS
+    platform: [iOS, tvOS]
     settings:
       INFOPLIST_FILE: NetworkCore/Configs/InfoTest.plist
       PRODUCT_BUNDLE_IDENTIFIER: "com.myapp.networkCore.test"
@@ -44,9 +44,9 @@ targets:
       - path: Tests
         group: Modules/NetworkCore
     dependencies:
-      - target: NetworkCore
+      - target: NetworkCore_${platform}
 
     scheme:
       testTargets:
-        - NetworkCore_Tests
+        - NetworkCore_Tests_${platform}
       gatherCoverageData: true
