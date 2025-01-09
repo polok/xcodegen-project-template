@@ -1,0 +1,6 @@
+
+//// Common Configuration
+#include "App/tvOS/Configs/xcconfig/Staging.xcconfig"
+
+MYAPP_CODE_SIGN_IDENTITY = iPhone Developer
+MYAPP_PROVISIONING_PROFILE_SPECIFIER = YourProfileIdOrNameHere

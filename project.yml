@@ -12,6 +12,7 @@ options:
   generateEmptyDirectories: true
   deploymentTarget: 
     iOS: "16.0"
+    tvOS: "16.0"
 
 
 #############
@@ -30,3 +31,4 @@ include:
   - UICore/config.yml
   - NetworkCore/config.yml
   - App/iOS/config.yml
+  - App/tvOS/config.yml

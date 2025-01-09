@@ -1,0 +1,15 @@
+
+//// Common Configuration
+#include "App/tvOS/Configs/xcconfig/Common.xcconfig"
+
+MYAPP_APP_NAME = MyApp
+MYAPP_APP_ICON = AppIcon
+MYAPP_BUNDLE_IDENTIFIER = com.myapp.production
+MYAPP_TEAM_ID = MyAppTeamIdGoesHere
+
+MYAPP_CODE_SIGN_ENTITLEMENTS = App/iOS/Configs/entitlements/production.entitlements
+
+//// Firebase Configuration
+
+GOOGLESERVICE_PLIST_NAME = GoogleServiceAppStore-Info
+GOOGLESERVICE_INFO_PLIST_DIR = ${SRCROOT}/App/iOS/Configs/GoogleServiceAppStore-Info.plist

@@ -1,0 +1,15 @@
+
+//// Common Configuration
+#include "App/tvOS/Configs/xcconfig/Common.xcconfig"
+
+MYAPP_APP_NAME = MyApp Staging
+MYAPP_APP_ICON = AppIconDev
+MYAPP_BUNDLE_IDENTIFIER = com.myapp.staging
+MYAPP_TEAM_ID = MyAppTeamIdGoesHere
+
+MYAPP_CODE_SIGN_ENTITLEMENTS = App/iOS/Configs/entitlements/staging.entitlements
+
+//// Firebase Configuration
+
+GOOGLESERVICE_PLIST_NAME = GoogleServiceBeta-Info
+GOOGLESERVICE_INFO_PLIST_DIR = ${SRCROOT}/App/iOS/Configs/GoogleServiceBeta-Info.plist
