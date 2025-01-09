@@ -20,7 +20,13 @@ Paste below in a macOS Terminal
 
 A package manager that installs and runs Swift command line tool packages [link](https://github.com/yonaskolb/Mint)
 
-To install the mint and bootstrap the dependencies like xcodegen past this to your macOS Terminal
+To install the mint past this to your macOS Terminal
+
+```
+make setup
+```
+
+To install or update terminal tools like xcodegen, swiftLint use
 
 ```
 make bootstrap
