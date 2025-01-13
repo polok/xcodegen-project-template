@@ -1,7 +1,7 @@
 project:
 	mint run xcodegen -s project.yml
 
-setup:
+install:
 	brew install mint		
 
 bootstrap:
